@@ -2,7 +2,7 @@ from django.contrib.auth import get_user_model
 from django.core.exceptions import ImproperlyConfigured
 from rest_framework import viewsets, status
 from rest_framework.decorators import action, permission_classes, api_view
-from rest_framework.permissions import AllowAny
+from rest_framework.permissions import AllowAny, IsAuthenticated
 from rest_framework.response import Response
 
 from . import serializers
@@ -46,7 +46,7 @@ class AuthViewSet(viewsets.GenericViewSet):
 
 
 @api_view(["GET"])
-@permission_classes((AllowAny,))
+@permission_classes((IsAuthenticated,))
 def get_user_statistics(request):
     serialized = UserStatisticsSerializer(data=request.GET)
     if serialized.is_valid():
