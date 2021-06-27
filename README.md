@@ -13,13 +13,18 @@ Api docs
 List of api’s 
 
 1.	Registration:
-url: {baseUrl}/register /
+ <br />
+url: {baseUrl}/register/
+ <br />
 method: POST
+ <br />
 No Auth Required
+ <br />
 body = { 
 “email”:asdasd@gmail.com,
 “password”: “123123Lol!”
 }
+ <br />
 
 2.	Login
 url: {baseUrl}/login /,
