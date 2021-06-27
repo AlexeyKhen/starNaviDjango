@@ -12,7 +12,7 @@ Api docs
 
 List of api’s 
 
-1.Registration:
+1.**Registration**:
  <br />
 url: {baseUrl}/register/
  <br />
@@ -26,7 +26,7 @@ body = {
 }
  <br />
 
-2.Login
+2.**Login**
  <br />
 url: {baseUrl}/login /,
  <br />
@@ -39,7 +39,7 @@ body = {
 “password”: “123123Lol!”}
  <br />
 
-3.User statistics
+3.**User statistics**
  <br />
 url: {baseUrl}/get_user_statistics/ ,
  <br />
@@ -50,7 +50,9 @@ No Auth Required
 Params = { 
 “email”:asdasd@gmail.com}
  <br />
-4. Create a Post 
+  <br />
+ 
+4. **Create a Post**
 <br />
 url: {baseUrl}/post/create_post/ ,
  <br />
@@ -73,9 +75,9 @@ Or several post could be created by sending
 Body = [{«title»: «13123»,«body»: «adds»}, {«title»: «and»,«body»: «fa»}]
  <br />
  
- 
- 
-5. Like a Post / Unlike a post    // if you send a request for the first time it will like the post, for the second time request sending it will unlike post
+5. **Like a Post / Unlike a post** 
+ <br />
+ NOTE : if you send a request for the first time it will like the post, for the second time request sending it will unlike post
  <br />
 url: {baseUrl}/post/like_post/,
  <br />
@@ -95,7 +97,7 @@ Body = {
  <br />
 
 
-6.Bulk  Like  of posts Post 
+6.**Bulk  Like  of posts Post**
  <br />
 url: {baseUrl}/post/bulk_post_like/ ,
  <br />
@@ -114,7 +116,7 @@ Body = {
  <br />
 	
 
-7. Get likes statistics
+7. **Get likes statistics**
   <br />
 url: {baseUrl}/post/get_like_statistics/ ,
  <br />
